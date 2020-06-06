@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeAct">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+            <com.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:shape_circle_borderColor="@color/textColorWhite"
+                app:shape_circle_borderWidth="1dp"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/img_profile"
+                    android:scaleType="centerInside"
+                    />
+            </com.github.florent37.shapeofview.shapes.CircleView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorWhite"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:text="Username"
+                android:id="@+id/tv_username"
+                android:layout_marginLeft="@dimen/_20sdp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+<com.google.android.material.tabs.TabLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/tab_layout"
+    app:tabSelectedTextColor="@color/colorAccent"
+    app:tabTextColor="@color/textColorWhite"
+    app:tabIndicatorColor="@color/colorAccent"
+    />
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"
+        />
+</LinearLayout>
