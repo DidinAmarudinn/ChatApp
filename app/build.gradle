@@ -11,7 +11,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-        vectorDrawables.useSupportLibrary true
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -38,6 +38,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:16.0.5'
     implementation 'com.google.firebase:firebase-database:16.0.4'
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.google.firebase:firebase-storage:16.0.5'
     testImplementation 'junit:junit:4.12'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
@@ -47,4 +48,7 @@ dependencies {
     implementation 'com.github.florent37:shapeofview:1.4.7'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //searchview
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
 }

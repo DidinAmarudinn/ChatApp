@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/show_message"
+        android:elevation="@dimen/_5sdp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/right_view_message"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_show_message"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="right"
+                android:text="10:50 Am"
+                android:textColor="@color/textColorWhite"
+                android:textSize="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/tv_user_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:maxLength="18"
+                android:gravity="right"
+                android:text="Didin amarudin"
+                android:textColor="@color/textColorWhite"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_show_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Hello"
+            android:gravity="right"
+            android:textColor="@color/textColorWhite"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_seen"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:text="seen"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/show_message"
+        />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/show_message"
+        android:elevation="@dimen/_5sdp"
+        android:background="@drawable/left_view_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/textColorBlack"
+                android:id="@+id/tv_user_chat"
+                android:maxLength="18"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Didin amarudin"
+                />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:id="@+id/tv_time"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_show_message"
+                android:text="10:50 Am"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/textColorBlack"
+                android:fontFamily="@font/poppins_light"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:id="@+id/tv_show_message"
+            android:text="Hello"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/_12sdp"
+            />
+    </LinearLayout>
+
+<TextView
+    android:elevation="@dimen/_2sdp"
+    android:textColor="@color/textColorBlack"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:layout_marginLeft="@dimen/_2sdp"
+    android:layout_height="wrap_content"
+    android:text="seen"
+    android:id="@+id/txt_seen"
+    android:layout_below="@id/show_message"
+    android:visibility="gone"
+/>
+</RelativeLayout>
